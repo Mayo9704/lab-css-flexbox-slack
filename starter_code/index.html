@@ -8,6 +8,9 @@
 
   <!-- link the Font Awesome stylesheet - CDN -->
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
 
   <!-- link your styles -->
   <link rel="stylesheet" href="./stylesheets/style.css" />
@@ -18,10 +21,10 @@
 
 <body>
   <nav>
-    <div>
+    <div id = menu-default>
       <img src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="menu-list">
         <li>
           <a href="#">Product</a>
         </li>
@@ -37,21 +40,21 @@
       </ul>
     </div>
 
-    <div>
-      <button>
+    <div class="button-container">
+      <button class="nav-button">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="nav-button">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
       <ul hidden>
         <li>
-          <a href="#">Sign in</a>
+          <a class="sig-in" href="#">Sign in</a>
         </li>
         <li>
-          <a href="#">Try for free</a>
+          <a class="try4f" href="#">Try for free</a>
         </li>
       </ul>
     </div>
@@ -66,8 +69,8 @@
       <div>
         <button>Sign up with email</button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
+        <button class="button-blue">
+          <img class="button-img" src="./images/logo-google.png" alt="Google logo" />
           <span>Sign up with Google</span>
         </button>
       </div>
@@ -81,22 +84,22 @@
 
   <main>
     <section>
-      <p>Trusted by companies all over the world</p>
+      <p class="paraghrap-as-title">Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="bussiness-logoC">
+        <img class="bussiness-logo" src="./images/logo-airbnb.png" alt="Airbnb logo" />
+        <img class="bussiness-logo" src="./images/logo-nasa.png" alt="NASA logo" />
+        <img class="bussiness-logo" src="./images/logo-uber.png" alt="Uber logo" />
+        <img class="bussiness-logo" src="./images/logo-target.png" alt="Target logo" />
+        <img class="bussiness-logo" src="./images/logo-nyt.png" alt="New York Times logo" />
+        <img class="bussiness-logo" src="./images/logo-spotify.png" alt="Spotify logo" />
       </div>
 
     </section>
 
     <section>
       <div>
-        <img src="./images/connectedness-mobile.png" alt="connectedness" />
+        <img class="feature-picture-left" src="./images/connectedness-mobile.png" alt="connectedness" />
       </div>
 
       <div>
@@ -128,13 +131,13 @@
       </div>
 
       <div>
-        <img src="./images/flexibility-mobile.png" alt="flexibility" />
+        <img class="feature-picture-right" src="./images/flexibility-mobile.png" alt="flexibility" />
       </div>
     </section>
 
-    <section>
+    <section class="third-picture-section">
       <div>
-        <img src="./images/speed-mobile.png" alt="speed" />
+        <img class="feature-picture-left" src="./images/speed-mobile.png" alt="speed" />
       </div>
 
       <div>
@@ -151,12 +154,12 @@
     </section>
 
 
-    <section>
+    <section class="bottom">
       <h3>Teams large and small rely on Slack</h3>
       <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
 
-      <div>
-        <button>Meet Slack for enterprise</button>
+      <div class="uio">
+        <button class="fill-button">Meet Slack for enterprise</button>
         <button>Talk to sales</button>
       </div>
 
@@ -187,11 +190,12 @@
       </ul>
     </section>
 
-    <section>
+    <section class="last-section">
       <h3>Welcome to your new digital HQ</h3>
-
+      <div class="uio">
       <button>Try for free</button>
-      <button>Talk to sales</button>
+      <button class="fill-button">Talk to sales</button>
+      </div>
     </section>
 
   </main>
@@ -235,19 +239,19 @@
     </div>
 
 
-    <ul>
+    <ul class="third-list">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
       <li>Cookie Preferences</li>
       <li>Contact Us</li>
-      <li>Change Region</li>
-      <li>Download Slack</li>
+      <li class="region">Change Region</li>
+      <li class="download">Download Slack</li>
     </ul>
 
     <hr>
 
-    <ul>
+    <ul class="social">
       <li>
         <i class="fab fa-twitter"></i>
       </li>

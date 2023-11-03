@@ -8,3 +8,386 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+html {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    padding-inline-start: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 70%;
+    line-height: 1.4;
+}
+
+body { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #540B51; */
+}
+
+nav img {
+    height: 32px;
+}
+
+nav {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    text-decoration: none;
+    background-color: #540B51;
+    border-bottom: 1px solid #ECB12F;
+}
+
+nav ul {
+    display: none;
+    padding: 1rem;
+}
+
+#menu-default a, li {
+    color: white;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+#menu-default { 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 8px;
+    margin: 12px;
+    align-items:center;
+}
+
+a {
+    color: #2E71A6;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.button-container{
+    display: flex;
+}
+
+.button-container button {
+    background: none;
+    border: none;
+}
+
+header {
+    background-color: #540B51;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+header > div > img {
+    width: 100%;
+}
+
+.button-container li {
+    color: white;
+    width: max-content;
+
+}
+
+header p {
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #ECB12F 45%, #fff 20%);
+    color: transparent;
+    -webkit-background-clip: text;
+    /* padding: 2rem; */
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    /* height: 80%; */
+    padding: 2rem 0;
+    border-radius: 8px;
+    border: 1px solid #540B51;
+    font-size: large;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #540B51;
+    /* border-color: #540B51; */
+    /* background-color: #540B51; */
+    margin: 0.5rem;
+}
+
+.button-blue {
+    background-color: #4285F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+}
+
+.button-img {
+    height: 80%;
+    background-color: white;
+    /* text-align: start; */
+    /* display: flex; */
+    /* justify-content: center; */
+    position: absolute;
+    left: 10px;
+}
+
+.uio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* first section good */
+
+main {
+    background-color: #F3EAE2;
+}
+
+/* main > section {
+    margin: 2rem;
+} */
+
+/* main > section > div {
+    
+} */
+
+.paraghrap-as-title {
+    /* color: white; */
+    width: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+img.bussiness-logo {
+    height: 50px;
+    padding: 1rem;
+}
+
+.feature-picture-left {
+    width: 90%;
+    margin: 1rem 2rem 1rem 0;
+}
+
+.feature-picture-right {
+    width: 90%;
+    margin: 1rem 0 1rem 4rem;
+    text-align: right;
+    padding: 3rem 0;
+}
+
+a span::after {
+    content: url('../images/icon-arrow-right.png');
+}
+
+li.region::before {
+    content: url('../images/icon-region.png');
+    padding-right: 1rem;
+}
+
+li.download::before {
+    content: url('../images/icon-download.png');
+    padding-right: 1rem;
+}
+
+p.centered-text {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+section.bottom p {
+    color: #540B51;
+    text-align: center;
+    width: auto;
+}
+
+section.third-picture-section {
+    padding-bottom: 3rem;
+}
+
+section.bottom {
+    background-color: white;
+    padding: 2rem;
+}
+
+button.fill-button {
+    background-color: #540B51;
+    color: white;
+    border: 1px solid white;
+}
+
+li > p > span {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+section.last-section {
+    padding: 4rem 2rem;
+    background-color: #540B51;
+    color: white;
+}
+
+footer {
+    padding: 3rem 2rem;
+    /* fon: black; */
+}
+
+ul.third-list {
+    /* display: flex; */
+    border-top: 1px solid black;
+    padding: 3rem 2rem;
+    font-weight: 500;
+}
+
+ul.third-list.icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.third-list li {
+    color: black;
+}
+
+hr {
+    display: none;
+}
+
+footer > div > ul > li {
+    color: black;
+}
+
+footer > div {
+    padding: 3rem 2rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.social {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 0 2rem;
+}
+
+.social li {
+    color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    ul.hidden, .menu-list  {
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    ul.hidden, .menu-list {
+        display: flex;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .uio {
+        flex-direction: row;
+    }
+
+    ul.third-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a.sig-in {
+        color: white;
+        display: block;
+        width: 100%;
+    }
+
+    a.try4f {
+        border: 1px solid white;
+        /* display: flex; */
+        text-align: center;
+        background-color: white;
+        color: black;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width:1440px) {
+    header > div > img {
+        width: 70%;
+    }
+
+    header > div > div {
+        display: flex;
+    }
+
+    .bussiness-logoC {
+        margin: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
